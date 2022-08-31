@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+    <table class="table">
+  <thead>
+    <tr>
+
+      <th scope="col">Username</th>
+      <th scope="col">Phone no</th>
+      <th scope="col">Email Id</th>
+      <th scope="col">Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#data}}
+    <tr>
+      <td>{{username}}</td>
+      <td>{{phoneno}}</td>
+      <td>{{emailid}}</td>
+      <td>{{gender}}</td>
+    </tr>
+    {{/data}}
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+       <a href="./"> <button type="button" class="btn btn-secondary">Back To home Page</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script>$(".modal").modal("show")</script>
+</html>

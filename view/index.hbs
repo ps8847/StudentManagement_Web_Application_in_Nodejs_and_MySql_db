@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .menu a{
+            display: flex;
+            flex-direction: column;
+            margin-left: 25%;
+            font-size: 4rem;
+            margin-top: 2rem;
+            font-weight: bolder;
+            background-color: black;
+            color:#fff;
+            text-decoration: none;
+            align-items: center;
+            width: 50%;
+            border-radius: 20px;
+        }
+        @media(max-width: 768px) {
+            .menu a{
+                font-size: 1.6rem;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="/add">ADD Student</a>
+        <a href="/search">SEARCH Student</a>
+        <a href="/update">UPDATE Student</a>
+        <a href="/delete">DELETE Student</a>
+        <a href="/view">VIEW Student</a>
+    </div>
+</body>
+</html>

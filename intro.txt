@@ -1,0 +1,12 @@
+// prerequisites are 
+nodejs 
+mysql server
+
+
+/// firt command >>> npm init 
+
+// second command >>> npm i express 
+
+// thrid command >> npm i mysql 
+
+// fourth command >> npm i hbs
